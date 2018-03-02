@@ -59,7 +59,7 @@ source "prow/mason_lib.sh"
 source "prow/cluster_lib.sh"
 
 # Download envoy and go deps
-make init
+PROXY_HUB= PROXY_TAG= make init
 
 trap cleanup EXIT
 
